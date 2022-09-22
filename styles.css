@@ -227,7 +227,7 @@ body {
 }
 
 .projects>div {
-    background-color: #d3d0c3;
+    background-color: #cfdfb3;
     margin: 20px;
     box-shadow: 5px 0px 0px  #3D8361 inset;
     border-radius: 9px;
@@ -255,11 +255,82 @@ body {
 }
 
 .announcements .content {
-    padding: 10px;
-    background-color: #d3d0c3;
+    padding: 15px;
+    padding-top: 30px;
+    background-color: #cfdfb3;
     margin-top: 20px;
     margin-right: 40px;
     border-radius: 9px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+    font-size: 0.9rem;
+    color: rgb(83, 83, 83);
 }
+
+.announcements .content div div{
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.trending {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 30px 1fr;
+}
+
+.trending span {
+    font-size: 1.4rem;
+}
+
+.trending .content {
+    background-color: #cfdfb3;
+    margin: 10px 40px 20px 0;
+    border-radius: 9px;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(4,1fr);
+    padding-top: 20px;
+}
+
+
+.trending .content img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+.trending .content>div {
+    display: flex;
+}
+
+.trending .content .avatar-span div {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 0.9rem;
+}
+
+.trending .content .avatar-span :nth-child(2) {
+    color: rgb(51, 51, 51);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
