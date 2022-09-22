@@ -120,7 +120,13 @@ body {
     color: var(--main-content-bgc);
 }
 
+.header .three-buttons button:hover {
+    background-color: #005241;
+}
 
+.header .three-buttons button:active {
+    background-color: #02382d;
+}
 
 .sidebar {
     grid-column: 1;
@@ -197,5 +203,63 @@ body {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     background-color: var(--main-content-bgc);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+    padding-top: 25px;
+    gap: 20px;
+    font-family: 'Roboto', sans-serif;
 }
+
+.projects {
+    grid-column: 1;
+    grid-row: 1 /  3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 30px repeat(3,1fr);
+}
+
+.projects>span {
+    grid-column: 1 / 3;
+    padding-left: 2%;
+    font-size: 1.4rem;
+}
+
+.projects>div {
+    background-color: #d3d0c3;
+    margin: 20px;
+    box-shadow: 5px 0px 0px  #3D8361 inset;
+    border-radius: 9px;
+    padding: 30px 20px 30px 20px;
+    font-size: 1.2rem;
+    color: rgb(70, 70, 70);
+}
+
+.projects>div .title {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.announcements {
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-rows: 30px 1fr;
+    grid-template-columns: 1fr;
+}
+
+.announcements>span {
+    font-size: 1.4rem;
+}
+
+.announcements .content {
+    padding: 10px;
+    background-color: #d3d0c3;
+    margin-top: 20px;
+    margin-right: 40px;
+    border-radius: 9px;
+}
+
 
